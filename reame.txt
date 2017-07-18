@@ -1,0 +1,2 @@
+superivisor --harmony index
+mongod

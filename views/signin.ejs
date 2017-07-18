@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<div class="ui grid">
+  <div class="four wide column"></div>
+  <div class="eight wide column">
+    <!--如果你的表单使用的是method="POST"（推荐使用），那么展现表单和处理表单通常使用相
+同的路径：这样可以区分开来，因为展现表单是一个GET 请求，而处理表单是一个POST 请求。如果
+采用POST这种方法，就可以省略表单上的action 属性。
+-->
+    <form class="ui form segment" method="post">
+      <div class="field required">
+        <label>用户名</label>
+        <input placeholder="用户名" type="text" name="name">
+      </div>
+      <div class="field required">
+        <label>密码</label>
+        <input placeholder="密码" type="password" name="password">
+      </div>
+      <input type="submit" class="ui button fluid" value="登录">
+    </form>  
+  </div>
+</div>
+
+<%- include('footer') %>
